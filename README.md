@@ -1,2 +1,5 @@
 # hello-world
-A journey of a thousand miles begins with a single step, or something equally corny.
+
+I can see someone using github to write fanfiction.
+
+Oh no.
