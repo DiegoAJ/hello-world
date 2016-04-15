@@ -9,3 +9,9 @@ I am currently testing pushing repositories to branches. Let's see how it goes.
   It's not like it matters much, now. We won't survive the winter. It'd be a miracle in itself if we survived the night. 
   
   
+Los dos componentes principales de un sistema experto son una base de conocimientos y un motor de inferencias.
+
+La base de conocimiento son la evolución de los sistemas de base de datos tradicionales, que tienen como fin no almacenar simples datos, sino elementos de conocimiento y como usar dicho conocimiento para que el Sistema realice sus funciones. Las bases de información tienen un gestor de administración equivalente a los DBMS (Database Management System) en los KBMS: Knowledge Base Management System. A diferencia de los DBMS, los KBMS no se encuentran estandarizados ni comercializados. 
+
+El motor de inferencia es el componente de un Sistema Experto, encargado de gerenciar y controlar logicamente el manejo y utilización del conocimiento almacenado en la base. El paradigma del motor de inferencia es la estrategia de búsqueda para producir el conocimiento demandado.
+
