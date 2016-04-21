@@ -1,37 +1,39 @@
-Los dos componentes principales de un sistema experto son una base de conocimientos y un motor de inferencias.
+1) Que son los Sistemas de Soporte de Decisiones ?
 
-La base de conocimiento son la evolución de los sistemas de base de datos tradicionales, que tienen como fin no almacenar simples datos, sino elementos de conocimiento y como usar dicho conocimiento para que el Sistema realice sus funciones. Las bases de información tienen un gestor de administración equivalente a los DBMS (Database Management System) en los KBMS: Knowledge Base Management System. A diferencia de los DBMS, los KBMS no se encuentran estandarizados ni comercializados.
+Un Sistema de Soporte a la Decisión (DSS) es una herramienta de "Business Intelligence" enfocada al análisis de los datos de una organización. Son sistemas  al nivel gerencial de la  organización que combinan datos internos y externos, herramientas analíticas y modelos,  sportando decisiones semi-estructuradas y no estructuradas.
 
-El motor de inferencia es el componente de un Sistema Experto, encargado de gerenciar y controlar logicamente el manejo y utilización del conocimiento almacenado en la base. El paradigma del motor de inferencia es la estrategia de búsqueda para producir el conocimiento demandado.
+En principio, puede parecer que el análisis de datos es un proceso sencillo, y fácil de conseguir mediante una aplicación hecha a medida o un ERP sofisticado. Sin embargo, no es así: estas aplicaciones suelen disponer de una serie de informes predefinidos en los que presentan la información de manera estática, pero no permiten profundizar en los datos, navegar entre ellos y manejarlos desde distintas perspectivas.
 
-Entre los componentes mas detallados del sistema experto, encontramos al subsistema de control de coherencia (previene la entrada de información incoherente en la base de conocimiento),  el subsistema de adquisición de conocimiento (se asegura de que al almacenar información esta sea nueva para la base de datos y no redundante), el subsistema de demanda de información (completa el conocimiento necesario y reanuda el proceso de inferencia hasta obtener alguna conclusión válida), el subsistema de incertidumbre (almacena la información de tipo incierto y propaga la incertidumbre asociada a esta información), el subsistema de ejecución de tareas (permite realizar acciones al Sistema Experto basadas en el motor de inferencia) y finalmente el subsistema de explicación (juega papel cuando se le solicita al sistema experto una explicación de las conclusiones obtenidas por este).
+El DSS es una de las herramientas más emblemáticas del Business Intelligence ya que, entre otras propiedades, permiten resolver gran parte de las limitaciones de los programas de gestión. Entre los tipos de DSS encontramos:  Sistemas de información gerencial (MIS), sistemas de información ejecutiva (EIS), sistemas expertos basados en inteligencia artificial (SSEE) y sistemas de apoyo a decisiones de grupo (GDSS), entre otros.
 
-Sin embargo, no podemos decir que existe una estructura común para los sistemas expertos. Muchos de los componentes previamente mencionados pueden encontrarse en estos, pero también pueden omitir algunos (pero siempre incluyendo un tipo de base de conocimientos y motor de inferencias). La base de conocimientos contiene el conocimiento especializado extraído del experto en el dominio, y como estos pueden quedar obsoletos o desactualizados, se pueden agregar a la base de conocimientos los nuevos datos sin afectar el motor de inferencias.
+2) Cuales son los componentes de un Sistema de Soporte de Decisiones
 
-Para la elaboración de un sistema experto, se requiere de un equipo de personas en el que todos ejercen un papel distinto. Por ejemplo, habría necesidad de un experto para que este aporte a la base de conocimientos, un llamado experto del conocimiento que estructura e implementa los conocimientos del experto, y finalmente un usuario que aporta deseos e ideas que influyen en el diseño del SE.
+La arquitectura de un sistema de soporte a decisiones se puede decir que está compuesta generalmente por tres componentes principales:
 
-La mayoría de los sistemas expertos utilizan el llamado encadenamiento regresivo para alcanzar sus conclusiones. Este método consiste en que, dado un objetivo, se busca una regla que permita establecer dicha conclusión. El proceso se repite hasta encadenar con la regla cuya conclusión satisfaga el objetivo propuesto, o se detecte que dicho problema no se puede resolver positivamente.
+*Una base de datos (también llamada base de conocimiento), colección de datos históricos o actuales que pueden residir en una computadora o un almacén de datos.
 
-También tenemos sistemas expertos que utilizan el llamado encadenamiento progresivo. Este tipo de encadenamiento se produce cuando el objetivo propuesto hace que se ejecute una regla, y la conclusión obtenida permite que se ejecute otra, y así sucesivamente hasta llegar a una respuesta, positiva o negativa. El punto final se detecta cuando no se pueden producir más encadenamientos. 
+*Un modelo: El contexto de decisión y los criterios del usuario. Es una representación abstracta que ilustra los componentes o las relaciones de un fenómeno.
 
-Para la construcción de un sistema experto, destacamos dos metodologías principales: la de prototipos, y la orientada a objetos. La primera consiste un prototipo que debe ser construido en poco tiempo, usando los programas adecuados y no se debe utilizar muchos recursos. La segunda metodología involucra lo que es la programación orientada a objetos, siendo su principal ventaja el hecho que cualquier modificación o mantenimiento que se le quiera realizar a un determinado componente no afectará a otro.
+*Interfaz del usuario, de fácil manejo. 
 
-En cuanto a que lenguajes de programación implementar para construir un Sistema Experto, podemos mencionar: LISP, CLIPS, Prolog, Smalltalk, C y C++. Además, a continuación listamos distintos "shells" para SE, siendo los llamados shells un tipo de Sistema Experto genérico sin base de conocimiento al que entonces podemos implementar una de nuestra propia elaboración. Los shells a mencionar son los siguientes: Gold Works II, ART, LOOPS, KEE, Humble y EMYCIN.
-
-----------------------------------------------------------------------------------------------------------
-
-Pasaremos a hablar de las aplicaciones que se le dan actualmente a los sistemas expertos. En general, las principales aplicaciones de los sistemas expertos son las relacionadas con el mundo empresarial. Esto se debe a que resultan muy útiles en funciones como la contabilidad, tesorería, gestiones internas. El campo que más aplicaciones de sistemas expertos esta realizando actualmente es el de la auditoría.
-
-Según la clase de problemas hacia los que estén orientados, podemos clasificar los Sistemas Expertos en diversos tipos entre los que cabe destacar diagnosis, pronóstico, planificación, reparación e instrucción. 
-
-Dentro del ámbito de interpretación, diagnostico y monitoreo, podemos decir que la interpretación consiste en encontrar el significado de los datos de entrada obtenidos por sensores o introducidos por el usuario. Existen dos tipos de interpretación, el análisis (donde la interpretación de datos se obtiene mediante la separación o distinción de las partes que los forman) y la síntesis (mediante la combinación de los datos).
-
-Cuando hablamos de diagnostico, el mismo consiste en identificar las causas internas que provocan un problema partir de una serie de datos o síntomas que son consecuencia de la misma y que son observables. Por otro lado, la monitorización es un caso particular de la interpretación, y consiste en la comparación continua de los valores de las señales o datos de entrada y unos valores que actúan como criterios de normalidad o estándares.
-
-Podemos definir el diseño como una traza o delineación con el fin de proyectar una obra u objeto de tal manera que este pueda cumplir con distintos requisitos planteados al idear este último. Los sistemas expertos de diseño, por su lado, reciben los requisitos de parte de un usuario y generan distintos diseños para verificar cual de estos cumplen con requerimientos solicitados por el usuario. 
-
-La planificación, de manera sencilla, se podría definir como el proceso de establecer metas y elegir medios para alcanzar dichas metas. 
+*Software de SDD, una colección de herramientas de software usadas para análisis de datos (OLAP), extracción de datos o un conjunto de modelos matemáticos y analíticos.
 
 
+*Análisis de sensibilidad; modelos que preguntan “qué pasa si” para determinar el impacto sobre los resultados por los cambios en uno o más factores.
+
+Sin embargo, según distintos autores, los componentes principales de un Sistema de Decisiones pueden ser otros. Por ejemplo, según los autores Ralph H. Sprague y Eric D. Carlson, en su libro "Building Effective Decision Support Systems", enumeran los siguientes elementos como los fundamentales a este tipo de sistema: El sistema de gestion de base de datos, el sistema gestor de modelos y el sistema gestor y generador de diálogo. Claro está, se puede decir que estos conceptos se superimponen con los que mencionamos anteriormente, pero cabe destacar que los elementos principales que conponen un SDD pueden variar dependiendo del contexto y del desarrollador.
 
 
+3) Que son los Sistemas de Informacion Geografica
+
+Un Sistema de Información Geográfica es un software específico que permite a los usuarios crear consultas interactivas, integrar, analizar y representar de una forma eficiente cualquier tipo de información geográfica referenciada asociada a un territorio, conectando mapas con bases de datos. En otras palabras, este software se utiliza para analizar y desplegar datos usando mapas digitalizados.
+
+El uso de este tipo de sistemas facilita la visualización de los datos obtenidos en un mapa con el fin de reflejar y relacionar fenómenos geográficos de cualquier tipo, desde mapas de carreteras hasta sistemas de identificación de parcelas agrícolas o de densidad de población. Además, permiten realizar las consultas y representar los resultados en entornos web y dispositivos móviles de un modo ágil e intuitivo, con el fin de resolver problemas complejos de planificación y gestión, conformándose como un valioso apoyo en la toma de decisiones.
+
+Por este motivo, son sumamente flexibles en su utilidad, Podrían, por ejemplo, utilizarse para llevar control de la posición actual de un paquete enviado por un servicio de mensajería como DHL o Fedex, pero también se pueden utilizar para realizar estudios de posición por una empresa, para determinar, por ejemplo, si abrir una tienda en un area específica sería un proyecto sensato (no abrir una tienda de ropa de alta gama en un territorio donde residen habitantes con un poder adquisitivo muy bajo como para realizar compras en esta).
+
+4) Como Ud haria un Sistema de Soporte a Decisiones en Grupo?
+
+5) De la bd Northwind, cree un stored Procedure a una tabla 
+temporal que indique el total de ordenes por anio 
+y haga la exportacion a una grafica
