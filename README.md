@@ -34,6 +34,26 @@ Por este motivo, son sumamente flexibles en su utilidad, Podrían, por ejemplo, 
 
 4) Como Ud haria un Sistema de Soporte a Decisiones en Grupo?
 
+Un Sistema de Soporte a Decisiones de Grupos se define como sistema interactivo basado en computadora que facilita la solución de problemas no estructurados por un grupo de tomadores de decisión. Los componentes de un SSDG incluyen hardware, software, personas y procedimientos. Todos estos componentes están arreglados de tal manera para ayudar en el proceso para llegar a una decisión.
+
+Es útil según sea el contexto (locaciones, actividades y tareas), el cual varía enormemente de una decisión a otra. Es práctico pensar en un SSDG en términos de actividades grupales comunes que potencialmente pueden ser ayudadas por sistemas computacionales. 
+
+El objetivo de un SSDG es mejorar la productividad y la efectividad de la toma de decisiones en grupo, ya sea acelerando el proceso mismo o mejorando la calidad de los resultados de las decisiones.
+
+Para elaborar un SSDG, tomaríamos en mente las siguientes consideraciones: 
+
+El SSDG es un sistema de información especialmente diseñado y no solamente una configuración de componentes del sistema ya existentes
+
+Un SSDG es diseñado con el objetivo de ayudar a la toma de decisiones grupales en el trabajo. Por ello el SSDG debe mejorar el proceso de toma de decisión o el resultado del grupo.
+
+Un SSDG es fácil de aprender a usar, ya que deberá ser utilizado por personas con diferentes niveles de conocimientos.
+
+El SSDG está diseñado para un tipo de problema o para una variedad de decisiones organizacionales a diferentes niveles.
+
+El SSDG está diseñado para fomentar actividades como generación de ideas resolución de conflictos y libertad de expresión.
+
+El SSDG contiene mecanismos ya construidos que desalientan el desarrollo de comportamientos grupales negativos como conflictos destructivos, mala comunicación y pensamientos de grupo.
+
 5) De la bd Northwind, cree un stored Procedure a una tabla 
 temporal que indique el total de ordenes por anio 
 y haga la exportacion a una grafica
